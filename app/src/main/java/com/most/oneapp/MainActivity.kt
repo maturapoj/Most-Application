@@ -25,7 +25,8 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("Most")
+//                    Greeting("Most")
+                    HomeScreen()
                 }
             }
         }
@@ -38,7 +39,7 @@ fun Greeting(name: String) {
         horizontalAlignment = Alignment.CenterHorizontally) {
         Text(text = "Hello $name!", modifier = Modifier.padding(16.dp))
         Button(onClick = { /*TODO*/ }) {
-            Text(text = "Click me")
+            Text(text = name)
         }
     }
 }
